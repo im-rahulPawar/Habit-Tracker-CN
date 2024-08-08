@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    align-items: center;
+  }
+  .nav .title a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+  }
+  .nav .userPresent {
+    display: flex;
+    align-items: center;
+  }
+  .nav .userPresent .nameOfUser {
+    color: white;
+    cursor: pointer;
+  }
+  .nav .userPresent .logOut a i {
+    margin: 1rem;
+    padding-left: 1rem;
+    border-left: solid 2px white;
+  }
+  .nav .noUser ul {
+    display: flex;
+  }
+  .nav .noUser ul li {
+    margin-left: 2rem;
+    list-style: none;
+  }
+  .nav .noUser ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  

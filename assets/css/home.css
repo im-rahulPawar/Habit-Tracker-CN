@@ -1,0 +1,202 @@
+.home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  .home-body .welcome-img {
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+  }
+  .home-body .welcome-title {
+    width: 41%;
+  }
+  .home-body .welcome-title h2 {
+    position: relative;
+    font-size: 1.6rem;
+    color: transparent;
+    -webkit-text-stroke: 0.04rem black;
+    text-transform: uppercase;
+  }
+  .home-body .welcome-title h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0rem black;
+    padding: 0;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  @keyframes animate {
+    0%, 10%, 100% {
+      width: 0;
+    }
+    70%, 90% {
+      width: 100%;
+    }
+  }
+  .home-body .welcome-button {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .home-body .img {
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+  }
+  .home-body .habits-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-body .habits-container #noHabitText {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .home-body .habits-container #open-btn-fixed {
+    margin: 3rem;
+    font-size: 1.4rem;
+    padding: 0.6rem 1rem;
+    border-radius: 1.4rem;
+    border: none;
+    cursor: pointer;
+  }
+  .home-body #open-btn-fixed:hover,
+  .home-body #open-btn-fixed:focus {
+    transform: translateY(-0.25em);
+  }
+  .home-body #open-btn {
+    margin-top: 30px;
+    left: 15%;
+    position: absolute;
+  }
+  .home-body .form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 9;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  .home-body .form-popup .form-container {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+  }
+  .home-body .form-popup .form-container input {
+    margin: 0.6rem;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+  }
+  .home-body .form-popup .form-container .btn {
+    margin-top: 1rem;
+  }
+  .home-body .form-popup .form-container .btn button {
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .home-body .show-habits {
+    height: 100%;
+    width: 100%;
+    /* -- daily view -- */
+  }
+  .home-body .show-habits .button-30 {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+  }
+  .home-body .show-habits #change-view {
+    margin-top: 30px;
+    left: 75%;
+    position: absolute;
+  }
+  .home-body .show-habits .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px;
+  }
+  .home-body .show-habits .habit-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 70%;
+    height: 90px;
+    margin-right: 170px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  .home-body .show-habits .habit-title {
+    color: white;
+    margin-top: 35px;
+    width: 20%;
+  }
+  .home-body .show-habits .day-container {
+    margin-right: 5px;
+  }
+  .home-body .show-habits .calender {
+    display: flex;
+  }
+  .home-body .show-habits .calender p {
+    margin-right: 30px;
+  }
+  .home-body .show-habits .mark-status {
+    margin-left: 18px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.281);
+  }
+  .home-body .show-habits .menu {
+    margin-top: 30px;
+  }
+  .home-body .show-habits .menu i {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .home-body .show-habits .menu i:hover {
+    transform: scale(1.15);
+  }
+  .home-body .show-habits .daily-view .habit-container {
+    justify-content: space-between;
+  }
+  .home-body .show-habits .habit-desc {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .home-body .show-habits .mark-status-daily {
+    color: rgba(0, 0, 0, 0.281);
+    font-size: 28px;
+    margin-left: 18px;
+    margin-top: 27px;
+  }
+  .home-body .habits-h {
+    color: white;
+  }
+  

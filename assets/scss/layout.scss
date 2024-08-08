@@ -1,0 +1,14 @@
+body{
+    // margin: 0;
+    background: url(/images/home-background.webp) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+    #layout-main{
+        height: 100%;
+    }
+}
